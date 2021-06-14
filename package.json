@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/RawanAlakhras/city-explorer-api/issues"
   },
-  "homepage": "https://github.com/RawanAlakhras/city-explorer-api#readme",
+  "homepage": "/",
   "dependencies": {
     "express": "^4.17.1"
   }

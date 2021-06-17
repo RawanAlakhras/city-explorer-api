@@ -3,7 +3,7 @@ module.exports = movies;
 let prevMovArray = {};
 async function movies(req, res) {
     //res.send('hello')
-    let searchQuery = req.query.searchQuery;
+    let searchQuery = req.query.query;
     let movieURL = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIE_API_KEY}&query=${searchQuery}`;
 
 
@@ -19,7 +19,7 @@ async function movies(req, res) {
             //console.log(movieResult.data.results[0]);
             console.log(movieResult.data);
             let movieArr = movieResult.data.results.map(item => {
-                return (new Corresponding(item));
+                return new Corresponding(item);
             });
             //console.log('rawan'+movieArr[0].data);
            
